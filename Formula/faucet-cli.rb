@@ -1,25 +1,25 @@
 class FaucetCli < Formula
   desc "Config-driven CLI runner for faucet-stream pipelines (YAML / JSON, Meltano-style)"
   homepage "https://pawansikawat.github.io/faucet-stream/"
-  version "1.6.0"
+  version "1.7.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/PawanSikawat/faucet-stream/releases/download/faucet-cli-v1.6.0/faucet-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "fed2f8e8240b30f8abf248ca1517017906105534b99f22ddcf9403f0f9687c4d"
+      url "https://github.com/PawanSikawat/faucet-stream/releases/download/faucet-cli-v1.7.0/faucet-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "3d11de477ddcec340f05075e107e070d94c61d6bd9ef012428657093ceef8a08"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/PawanSikawat/faucet-stream/releases/download/faucet-cli-v1.6.0/faucet-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "74b9c882260c0f0e6cd7558181c615264d10d7e25fa9674a5baa430f6741e7bc"
+      url "https://github.com/PawanSikawat/faucet-stream/releases/download/faucet-cli-v1.7.0/faucet-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "963c239cc7e43c1abf685d2067b210c2b1c76604188a68112490cd62538a107e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/PawanSikawat/faucet-stream/releases/download/faucet-cli-v1.6.0/faucet-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "ccc01490a10cf11040d66c053ae44213b963b8f4956be2223700e10b02f0f234"
+      url "https://github.com/PawanSikawat/faucet-stream/releases/download/faucet-cli-v1.7.0/faucet-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f26c0a57913c1b9f83d3f3d42678f827b7c84567a57782bfbbab2a68529b9629"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/PawanSikawat/faucet-stream/releases/download/faucet-cli-v1.6.0/faucet-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "6dab05341747b9e03d22c57c326ba1b91433249d7ff31b2ff73befddd5d15894"
+      url "https://github.com/PawanSikawat/faucet-stream/releases/download/faucet-cli-v1.7.0/faucet-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "031d5a0bab1a5f32b594fe34a0390f84c32367046c3f2669625020d4f1d7ff33"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
